@@ -482,3 +482,8 @@ autocmd InsertEnter * if !exists('w:last_fdm') | let w:last_fdm=&foldmethod | se
 autocmd InsertLeave,WinLeave * if exists('w:last_fdm') | let &l:foldmethod=w:last_fdm | unlet w:last_fdm | endif
 set relativenumber
 let g:solarized_termcolors=256
+
+" Terraform syntax
+let g:terraform_align = 1
+let g:terraform_fold_sections=1
+let g:terraform_fmt_on_save=1
